@@ -1,0 +1,13 @@
+Precision: 
+    kemampuan classifier dalam melabeli data agar data yang negatif tidak dilabeli menjadi positif
+    dengan rumus tp / (tp + fp)
+Recall:
+    kemampuan classifier dalam menemukan semua sampel positif
+    dengan rumus tp / (tp + fn)
+F1-score:
+    rata-rata dari precision dan recall yang menunjukkan keakuratan classifier dalam mengklasifikasikan data dari suatu class 
+    dibandingkan data dari kelas lainnya.
+    dengan rumus (2 * precision * recall) / (precision + recall)
+Support:
+    jumlah sampel yang benar dari setiap class.
+    
