@@ -1,0 +1,8 @@
+Kesimpulan:
+Untuk membagi data dapat menggunakan method .sample() yang disediakan pandas.
+Parameter frac=.60 pada method sample berfungsi untuk mengambil data sebanyak 60% dari total data secara random.
+Parameter random_state mengembalikan data yang digenerate seolah-olah random dan menjaga data agar tidak berubah-ubah. Hal ini untuk menjaga hasil data train dan data set agar tidak berganti atau saling tertukar.
+Untuk mengambil data test, perlu menghindari pengambilan data yang sama dengan data train dengan method dropna() atau isin()
+Dari regression plot, dapat dilihat bahwa korelasi antara points dan price adalah positif karena garis yang dihasilkan sedikit naik, di mana semakin tinggi points, maka price juga tinggi.
+Hasil regression plot dari data train tanpa cleaning (wine_60) dengan data train setelah cleaning (wine_train) tidak jauh berbeda.
+Dari menghapus missing value, data wine pada kolom country hanya didapat dari 'US'
