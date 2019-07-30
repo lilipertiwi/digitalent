@@ -1,0 +1,19 @@
+import os
+import folium
+import pandas as pd
+import numpy as np
+from folium.plugins import HeatMap
+data = (
+    np.random.normal(size=(100, 3)) *
+    np.array([[1, 1, 1]]) +
+    np.array([[-6.368086, 106.828511, 1]])
+).tolist()
+
+m = folium.Map(
+    location=[-6.368086, 106.828511],
+    zoom_start=6,
+    tiles='stamentoner'
+)
+HeatMap(data).add_to(m)
+m.save(os.path.join('./', 'Heatmap.html'))
+m
